@@ -1,0 +1,2 @@
+def avg:
+    pass
