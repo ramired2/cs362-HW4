@@ -15,12 +15,12 @@ class testCasePerson(unittest.TestCase):
         # self.assertEqual("jeSS", result.first)
         # self.assertEqual("ranDalF", result.last)
     
-    # fail test - type errors --> adding numbers
-        bIsDigit = False
+    # fail test - type errors 
+        bIsLetter = True
 
-        if result.first.isdigit() or result.last.isdigit():
-            bIsDigit = True
-        self.assertNotEqual(bIsDigit, True)
+        if not result.first.isalpha() or not result.last.isalpha():
+            bIsDigit = False
+        self.assertNotEqual(bIsDigit, False)
 
 if __name__ == "__main__":
     unittest.main()
