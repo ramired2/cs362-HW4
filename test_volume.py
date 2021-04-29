@@ -16,19 +16,10 @@ class testCaseVolume(unittest.TestCase):
         # result = volume.vol(-6)
         # self.assertEqual(result, -216)
 
-    #fail tests
-        # test post complex num
-        # result = volume.vol(9.65)
-        # self.assertEqual(result, 60)
-
+    #fail test
         #type error test
-        result = volume.vol(s)
-        bIsLetter = False
-
-        if result.isAlpha():
-            bIsLetter = True
-
-        self.assertEqual(bIsLetter, False)
+        # result = volume.vol(s)
+        # self.assertEqual(result, s)
 
 if __name__ == "__main__":
     unittest.main()
