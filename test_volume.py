@@ -5,8 +5,8 @@ class testCaseVolume(unittest.TestCase):
     def test_vol(self):
     #pass tests
         # test post simple num
-        # result = volume.vol(3)
-        # self.assertEqual(result, 27)
+        result = volume.vol(3)
+        self.assertEqual(result, 27)
 
         # test post complex num
         # result = volume.vol(9.65)
@@ -19,11 +19,16 @@ class testCaseVolume(unittest.TestCase):
     #fail tests
         # test post complex num
         # result = volume.vol(9.65)
-        # self.assertEqual(result, 898.632125000000)
+        # self.assertEqual(result, 60)
 
         #type error test
-        # result = volume.vol(s)
-        # self.assertEqual(result, s)
+        result = volume.vol(s)
+        bIsLetter = False
+
+        if result.isAlpha():
+            bIsLetter = True
+
+        self.assertEqual(bIsLetter, False)
 
 if __name__ == "__main__":
     unittest.main()
