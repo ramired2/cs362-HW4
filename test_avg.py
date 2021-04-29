@@ -26,11 +26,11 @@ class testCaseAvg(unittest.TestCase):
 
         #letters in the list
         # result = avg.avg([s, q, w, l])
-        # self.assertEqual(result, 0)
+        # self.assertEqual(result, 1)
 
         # letters and numbers
-        # result = avg.avg([-9, q, 20, w, 70, l, -70])
-        # self.assertEqual(result, 0)
+        # result = avg.avg([-8, q, 20, w, 70, l, -70, 0, 0])
+        # self.assertEqual(result, 2)
 
 if __name__ == "__main__":
     unittest.main()
