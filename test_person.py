@@ -9,14 +9,14 @@ class testCasePerson(unittest.TestCase):
     # passing test
         #capital letters
         # when input "Sarah" and "Jane"
-        # self.assertEqual("Sarah", result.first)
-        # self.assertEqual("Jane", result.last)
+        self.assertEqual("Sarah", result.first)
+        self.assertEqual("Jane", result.last)
     
     # fail test
         # ramdonly capitalized letters
         # if input "jeSS" expects "Jess"
-        # self.assertEqual("Jess", result.first)
-        # self.assertEqual("Randalf", result.last)
+        self.assertEqual("Jess", result.first)
+        self.assertEqual("Randalf", result.last)
 
         #  type errors 
         bIsLetter = True

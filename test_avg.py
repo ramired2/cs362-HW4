@@ -9,13 +9,13 @@ class testCaseAvg(unittest.TestCase):
         self.assertEqual(result, 20.25)
 
         # negative list
-        # result = avg.avg([-60, -19, -7, -6, -19, -70, -79])
-        # self.assertEqual(result, -37.142857142857146)
+        result = avg.avg([-60, -19, -7, -6, -19, -70, -79])
+        self.assertEqual(result, -37.142857142857146)
 
     #Fail tests
         #letters in the list
-        # result = avg.avg([s, q, w, l])
-        # self.assertEqual(result, 1)
+        result = avg.avg([s, q, w, l])
+        self.assertEqual(result, 1)
 
 if __name__ == "__main__":
     unittest.main()

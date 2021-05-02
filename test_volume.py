@@ -5,12 +5,12 @@ class testCaseVolume(unittest.TestCase):
     def test_vol(self):
     #pass tests
         # simple num
-        # result = volume.vol(3)
-        # self.assertEqual(result, 27)
+        result = volume.vol(3)
+        self.assertEqual(result, 27)
 
         # neg number
-        # result = volume.vol(-6)
-        # self.assertEqual(result, -216)
+        result = volume.vol(-6)
+        self.assertEqual(result, -216)
 
     #fail test
         #type error test
